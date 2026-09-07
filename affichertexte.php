@@ -42,7 +42,7 @@ $isSushisValid = isValidRecipe($sushis);
 ];
 
 ?>
-
+<?php include('header.php'); ?>
 <?php
 function displayAuthor(string $authorEmail, array $users) : string
 {
