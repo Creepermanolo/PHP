@@ -1,21 +1,17 @@
 <?php
 // variables.php
 
+
 $users = [
     [
-        'full_name' => 'Mickaël Andrieu',
-        'email' => 'mickael.andrieu@exemple.com',
-        'age' => 34,
+        'fullname' => 'Mateo21',
+        'email'    => 'utilisateur@exemple.com',
+        'password' => 'monMotDePasse123', // à ajouter
     ],
     [
-        'full_name' => 'Mathieu Nebra',
-        'email' => 'mathieu.nebra@exemple.com',
-        'age' => 34,
-    ],
-    [
-        'full_name' => 'Laurène Castor',
-        'email' => 'laurene.castor@exemple.com',
-        'age' => 28,
+        'fullname' => 'John Doe',
+        'email'    => 'john.doe@exemple.com',
+        'password' => 'secret456',         // à ajouter
     ],
 ];
 
@@ -23,25 +19,25 @@ $recipes = [
     [
         'title' => 'Cassoulet',
         'recipe' => '',
-        'author' => 'mickael.andrieu@exemple.com',
+        'author' => 'utilisateur@exemple.com',
         'is_enabled' => true,
     ],
     [
         'title' => 'Couscous',
         'recipe' => '',
-        'author' => 'mickael.andrieu@exemple.com',
+        'author' => 'utilisateur@exemple.com',
         'is_enabled' => false,
     ],
     [
         'title' => 'Escalope milanaise',
         'recipe' => '',
-        'author' => 'mathieu.nebra@exemple.com',
+        'author' => 'john.doe@exemple.com',
         'is_enabled' => true,
     ],
     [
         'title' => 'Salade Romaine',
         'recipe' => '',
-        'author' => 'laurene.castor@exemple.com',
+        'author' => 'john.doe@exemple.com',
         'is_enabled' => false,
     ],
 ];
