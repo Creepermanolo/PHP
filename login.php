@@ -11,10 +11,9 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
             $user['password'] === $_POST['password']
         ) {
 
-            $loggedUser = ['email' => $user['email']];
+            $loggedUser = ['email' => $user['email'], 'fullname' => $user['fullname']];
 
-
-            $_SESSION['loggedUser'] = $loggedUser;
+            setcookie('LOGGED_USER', $loggedUser['email'], time() + 365*24*3600,"","",true,true);
 
 
         } else {
@@ -72,6 +71,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
 <?php else: ?>
     <div class="alert alert-success" role="alert">
-        Bonjour <?php echo htmlspecialchars($loggedUser['email']); ?> et bienvenue sur le site !
+        Bonjour <?php echo htmlspecialchars($loggedUser['fullname']); ?> et bienvenue sur le site !
+        <button type="button" class="déconnexion" onclick="window.location.href='logout.php'">Déconnexion</button>
     </div>
 <?php endif; ?>
